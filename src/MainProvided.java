@@ -10,7 +10,7 @@ import java.util.Random;
  * Locking Strategies & Deadlocks
  * https://www.udemy.com/java-multithreading-concurrency-performance-optimization
  */
-public class Main {
+public class MainProvided {
     public static void main(String[] args) {
         Intersection intersection = new Intersection();
         Thread trainAThread = new Thread(new TrainA(intersection));
