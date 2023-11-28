@@ -20,10 +20,10 @@ public class Intersection {
 
     public void takeRoadB() {
         System.out.println("entering takeRoadB()");
-        synchronized (roadB){
-            System.out.println("Road B is locked by thread"
+        synchronized (roadA){
+            System.out.println("Road A is locked by thread "
                     + Thread.currentThread().getName());
-            synchronized (roadA) {
+            synchronized (roadB) {
                 System.out.println("Train A is passing through road B in the intersection.");
                 try {
                     Thread.sleep(1);
